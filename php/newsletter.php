@@ -26,7 +26,7 @@ if($isValid === true && $mailchimpResult === true)
 
 	// Submit Mail
 	$mail = new SimpleMail();
-	$mail->setTo(YOUR_EMAIL_ADDRESS, YOUR_COMPANY_NAME)
+	$mail->setTo('info@abiosroyale.com', 'Abios Royale')
 	->setSubject('New newsletter subscription')
 	->setFrom(htmlspecialchars($_POST['newsletter-email']), htmlspecialchars($_POST['newsletter-email']))
 	->addGenericHeader('X-Mailer', 'PHP/' . phpversion())

@@ -47,7 +47,7 @@ if($isValid === true) {
 
 	$result = array(
 		'result' => 'success', 
-		'msg' => array('Success! Your contact request has been send.')
+		'msg' => array('Success! Your reservation request has been sent.')
 		);
 
 	echo json_encode($result);
